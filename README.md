@@ -71,12 +71,6 @@ strategy using the same (wrong) starting guess.
 
 ---
 
-### Single-path execution profile
-
-![Single Path](assets/single_path.png)
-
----
-
 ## The Closed-Loop System
 
 The three components are genuinely coupled — this is what distinguishes
