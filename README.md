@@ -115,9 +115,13 @@ Parameters calibrated from LOBSTER AAPL data (2012-06-21, NASDAQ).
 
 ### Online estimator (Wu 2026, Eq. 3.2)
 
-$$d\hat{r}_t = \eta_t \underbrace{(-D_t)}_{\partial f/\partial r} \sigma^{-2}
-\underbrace{\left[\frac{dD_t}{dt} + \hat{r}_t D_t\right]}_{\text{innovation}} dt
-+ \text{martingale term}$$
+$$
+d\hat{r}_t
+=
+\eta_t \underbrace{(-D_t)}_{\partial f/\partial r}\sigma^{-2}
+\underbrace{\left(dD_t+\hat{r}_t D_t\,dt\right)}_{\text{innovation}}
++ dM_t
+$$
 
 **Theorem 4.3:** Under standard regularity, monotonicity, and learning-rate
 conditions ($\int \eta_t \, dt = \infty$, $\int \eta_t^2 \, dt < \infty$),
